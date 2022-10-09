@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+.bg {
+  background-color: black;
+}
+
+.colorWhite {
+  color: #fff;
+}
+
+.colorBlack {
+  color: black;
+}
+
+.search input::-moz-placeholder, .search select::-moz-placeholder {
+  color: rgb(8, 126, 164);
+}
+
+.search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
+  color: rgb(8, 126, 164);
+}
+
+.colorBlue, .search input::placeholder,
+.search select::placeholder, .search input,
+.search select, .sbtn, .search button {
+  color: rgb(8, 126, 164);
+}
+
 .App {
   height: 100vh;
   padding: 0 0 3rem;
@@ -37,18 +63,17 @@ nav ul li svg {
 }
 
 .container {
-  padding: 3rem;
-  margin: 1rem 3rem 1rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem 3rem;
 }
 
 .cards {
-  width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 2rem;
   gap: 1.3rem;
-  margin-top: 13rem;
 }
 .cards div {
   display: flex;
@@ -57,7 +82,7 @@ nav ul li svg {
   max-width: 400px;
 }
 .cards img {
-  max-width: 400px;
+  max-width: 80%;
   border-radius: 12px;
 }
 .cards p {
@@ -72,18 +97,7 @@ nav ul li svg {
   background: transparent;
 }
 
-.right {
-  clear: right;
-  float: right;
-}
-
-.left {
-  clear: left;
-  float: left;
-}
-
 .sbtn, .search button {
-  color: rgb(8, 126, 164);
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
   border: 0;
@@ -92,11 +106,12 @@ nav ul li svg {
 
 .search {
   margin-top: 10vh;
-  float: right;
+  text-align: end;
 }
 .search > div {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .search select {
   margin-right: 0.5rem;
@@ -110,17 +125,6 @@ nav ul li svg {
   font-size: 1.6rem;
   border-radius: 6px;
   padding: 0.5rem;
-  color: rgb(8, 126, 164);
-}
-.search input::-moz-placeholder, .search select::-moz-placeholder {
-  color: rgb(8, 126, 164);
-}
-.search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
-  color: rgb(8, 126, 164);
-}
-.search input::placeholder,
-.search select::placeholder {
-  color: rgb(8, 126, 164);
 }
 .sp {
   text-align: center;

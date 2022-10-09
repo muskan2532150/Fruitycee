@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getdetail } from '../redux/popup/popup';
 
-const Item = ({ record, count }) => {
+const Item = ({ record }) => {
   const dispatch = useDispatch();
   const handleClick = (record) => {
     dispatch(getdetail(record));
@@ -12,7 +12,7 @@ const Item = ({ record, count }) => {
 
   const image = `images/${record.name}.jpg`;
   return (
-    <div className={count % 2 ? 'cards right' : 'cards left'}>
+    <div className='cards'>
       <img src={image} alt={record.name} />
       <div>
         <p>{record.name}</p>

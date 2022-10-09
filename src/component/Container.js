@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AiOutlineArrowUp, AiFillCloseCircle, AiOutlineSearch } from 'react-icons/ai';
-import { fetchdata } from '../redux/Container/Containers';
+import { fetchdata, STATUSES } from '../redux/Container/Containers';
 import Item from './Item';
 
 const Container = () => {
-  const { data } = useSelector((state) => state.container);
+  const { data,status } = useSelector((state) => state.container);
   const [scroll, setscroll] = useState(document.documentElement.scrollTop);
   const [bool, setbool] = useState(false);
   const dispatch = useDispatch();
@@ -31,10 +31,14 @@ const Container = () => {
     }
   };
 
-  let count = 0;
+if(status=== STATUSES.LOADING)
+{
+  return <h2>Loading...</h2>
+}
+
   return (
-    <div className="container">
-      <div className="search">
+    <>
+    <div className="search">
         { bool ? (
           <>
             <div>
@@ -52,20 +56,20 @@ const Container = () => {
                 <AiFillCloseCircle />
               </button>
             </div>
-            {/* {bool ? <p className="sp" /> : ''} */}
           </>
         )
           : <button type="button" className="sbtn" onClick={() => setbool(!bool)}><AiOutlineSearch /></button>}
       </div>
-
+      <div className="container">
       {data.map((record) => {
-        count += 1;
-        return <Item record={record} key={record.id} count={count} />;
+        return <Item record={record} key={record.id} />;
       })}
       <div className="topbtn">
         <button className={scroll > 20 ? 'scrollbtn ' : 'scrollDown'} type="button" onClick={() => handleScroll()}><AiOutlineArrowUp /></button>
       </div>
     </div>
+    </>
+    
   );
 };
 

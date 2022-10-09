@@ -1,16 +1,15 @@
 .container {
-  padding: 3rem;
-  margin: 1rem 3rem 1rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem 3rem;
 }
 
 .cards {
-  width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 2rem;
   gap: 1.3rem;
-  margin-top: 13rem;
 
   div {
     display: flex;
@@ -20,7 +19,7 @@
   }
 
   img {
-    max-width: 400px;
+    max-width: 80%;
     border-radius: 12px;
   }
 
@@ -38,18 +37,8 @@
   }
 }
 
-.right {
-  clear: right;
-  float: right;
-}
-
-.left {
-  clear: left;
-  float: left;
-}
-
 .sbtn {
-  color: rgb(8, 126, 164);
+  @extend .colorBlue;
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
   border: 0;
@@ -58,11 +47,12 @@
 
 .search {
   margin-top: 10vh;
-  float: right;
+  text-align: end;
 
   >div {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
   select {
@@ -79,10 +69,10 @@
     font-size: 1.6rem;
     border-radius: 6px;
     padding: 0.5rem;
-    color: rgb(8, 126, 164);
+    @extend .colorBlue;
 
     &::placeholder {
-      color: rgb(8, 126, 164);
+      @extend .colorBlue;
     }
   }
 

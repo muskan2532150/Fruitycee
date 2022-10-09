@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const URL = 'https://www.fruityvice.com/api/fruit';
 
-const STATUSES = Object.freeze({
+export const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
   LOADING: 'loading',
