@@ -182,11 +182,53 @@ nav ul li svg {
 
 .topbtn {
   position: fixed;
-  bottom: 14vh;
-  left: 5vh;
+  bottom: 4vh;
+  right: 3vh;
 }
 .topbtn button {
   border: 0;
   background: transparent;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin: 2rem;
+    row-gap: 3.6rem;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+  }
+  .cards {
+    padding: 0;
+    gap: 0.6rem;
+  }
+  .cards img {
+    max-width: 90%;
+  }
+  .cards > div {
+    max-width: 70%;
+  }
+  .cards p {
+    font-size: 1.3rem;
+  }
+  .topbtn button {
+    font-size: 2rem;
+  }
+  .popup {
+    padding: 6rem 2rem 2rem;
+  }
+  .popup .body {
+    width: 100%;
+    padding: 1rem;
+  }
+  .popup .body img {
+    width: 100%;
+    border-radius: 5%;
+  }
+  .popup p {
+    font-size: 1.4rem;
+  }
+  .popup .nut {
+    gap: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

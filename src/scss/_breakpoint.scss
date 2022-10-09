@@ -1,0 +1,50 @@
+@media screen and (max-width :  540px) {
+.container{
+    margin: 2rem;
+    row-gap: 3.6rem;
+    column-gap: .7rem;
+}
+
+.cards{
+    padding: 0;
+    gap: 0.6rem;
+
+    img{
+        max-width: 90%;
+    }
+
+    >div{
+        max-width: 70%;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.topbtn{
+    button{
+        font-size: 2rem;
+    }
+}
+
+
+.popup {
+    padding: 6rem 2rem 2rem;
+    .body{
+        width: 100%;
+        padding: 1rem;
+
+        img{
+            width: 100%;
+            border-radius: 5%;
+        }
+    }
+    p{
+        font-size: 1.4rem;
+    }
+
+    .nut{
+        gap: 0;
+    }
+}
+}     
