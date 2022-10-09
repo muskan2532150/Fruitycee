@@ -32,7 +32,7 @@ export function fetchdata(query) {
   return async function fetchdataThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
-      const res = await fetch(`${URL}/${query}`);
+      const res = await fetch(`https://proxy.cors.sh/${URL}/${query}`);
       const data = await res.json();
       const array = [];
       Object.values(data).forEach((records) => array.push({

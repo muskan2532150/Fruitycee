@@ -52,7 +52,7 @@ const Container = () => {
                 <AiFillCloseCircle />
               </button>
             </div>
-            {bool ? <p className="sp" /> : ''}
+            {/* {bool ? <p className="sp" /> : ''} */}
           </>
         )
           : <button type="button" className="sbtn" onClick={() => setbool(!bool)}><AiOutlineSearch /></button>}
