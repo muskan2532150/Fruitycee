@@ -1,84 +1,53 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 4rem 3rem;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 4rem;
   padding: 2rem;
-  gap: 1.3rem;
-
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-  }
-
-  img {
-    max-width: 80%;
-    border-radius: 12px;
-  }
-
-  p {
-    font-size: 2rem;
-    font-weight: 700;
-  }
 
   button {
     border: 0;
+    padding-bottom: 5rem;
+    width: 80%;
+    margin: auto;
     outline: 0;
-    width: 50%;
-    font-size: 1.3rem;
+    height: 100%;
+    position: relative;
     background: transparent;
   }
 }
 
+.cards {
+  height:100%;
+
+  div {
+    border: 0;
+    padding-bottom: 5rem;
+    width: 80%;
+    margin: auto;
+    outline: 0;
+    height: 100%;
+    position: relative;
+    background: transparent;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  img {
+    max-width: 80%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+}
+
 .sbtn {
-  @extend .colorBlue;
+  color:$blue;
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
   border: 0;
   background: transparent;
-}
-
-.search {
-  margin-top: 10vh;
-  text-align: end;
-
-  >div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  select {
-    margin-right: 0.5rem;
-
-    option {
-      font-size: medium;
-    }
-  }
-
-  input,
-  select {
-    border-color: rgb(8, 126, 164);
-    font-size: 1.6rem;
-    border-radius: 6px;
-    padding: 0.5rem;
-    @extend .colorBlue;
-
-    &::placeholder {
-      @extend .colorBlue;
-    }
-  }
-
-  button {
-    @extend .sbtn;
-  }
 }
 
 .sp {

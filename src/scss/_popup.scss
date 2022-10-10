@@ -25,8 +25,7 @@
 
     li {
       list-style: none;
-      display: flex;
-      justify-content: space-between;
+      @include dflex(row,space-between,center);
     }
 
     p {
@@ -38,10 +37,11 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @include dflex(column,flex-start,flex-start);
   }
 
   .li {
-    display: flex;
-    flex-direction: column;
+    @include dflex(column,flex-start,flex-start);
+
   }
 }

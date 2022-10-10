@@ -12,15 +12,15 @@ const Item = ({ record }) => {
 
   const image = `images/${record.name}.jpg`;
   return (
-    <div className='cards'>
-      <img src={image} alt={record.name} />
-      <div>
-        <p>{record.name}</p>
         <button onClick={() => handleClick(record)} type="button">
-          <Link to="/details"><AiOutlineRight /></Link>
-        </button>
+          <Link to="/details"><div className='cards'>
+            <img src={image} alt={record.name} />
+            <div>{record.name}</div>
       </div>
-    </div>
+      </Link>
+        </button>
+      // </div>
+    // </div>
   );
 };
 

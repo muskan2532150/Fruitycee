@@ -1,0 +1,10 @@
+$blue: rgb(51 65 85/1);
+$black: black;
+$white: white;
+
+@mixin dflex($fd,$jc,$ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
