@@ -1,5 +1,5 @@
 .popup {
-  padding: 10rem 2rem 2rem;
+  padding: 2rem;
 
   p {
     font-size: 1.8rem;
@@ -16,16 +16,20 @@
 
   .body {
     margin: auto;
-    width: 37%;
+    width: 100%;
     padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
 
     img {
-      max-width: 40rem;
+      max-width: 50%;
+      border-radius: 5%;
     }
 
     li {
       list-style: none;
-      @include dflex(row,space-between,center);
+      @include dflex(row, space-between, center);
     }
 
     p {
@@ -34,14 +38,20 @@
   }
 
   .nut {
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
-    @include dflex(column,flex-start,flex-start);
+    @include dflex(column, flex-start, flex-start);
+
+    ul {
+      width: 100%;
+    }
   }
 
   .li {
-    @include dflex(column,flex-start,flex-start);
+    @include dflex(column, flex-start, flex-start);
 
   }
+}
+
+.lists{
+  width: 70%;
 }

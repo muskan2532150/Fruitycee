@@ -28,9 +28,15 @@
     background: rgb(51, 65, 85);
     background: rgb(51, 65, 85, 0.7);
     height: 100%;
+    @include dflex(row,center,center);
+    opacity: 0;
 
     &:hover{
       opacity: 1;
+    }
+
+    p{
+      font-size: 3vw;
     }
   }
 

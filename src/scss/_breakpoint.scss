@@ -1,67 +1,81 @@
-@media screen and (max-width :  540px) {
-nav{
-    a{
-        svg{
-            font-size: 3rem;
+@media screen and (max-width : 540px) {
+    nav {
+        a {
+            svg {
+                font-size: 3rem;
+            }
         }
     }
-}
 
-    .container{
-    margin: 2rem;
-    row-gap: 3.6rem;
-    column-gap: .7rem;
-    grid-template-columns: 1fr 1fr;
+    .container {
+        margin: 2rem;
+        row-gap: 3.6rem;
+        column-gap: .7rem;
+        grid-template-columns: 1fr 1fr;
 
-    button{
-        padding: 0;
-    }
-}
-
-.cards{
-   img{
-        max-width: 100%;
+        button {
+            padding: 0;
+        }
     }
 
-    >div{
-        max-width: 70%;
+    .cards {
+        img {
+            max-width: 100%;
+        }
+
+        >div {
+            max-width: 70%;
+        }
     }
-}
 
-.topbtn{
-    button{
-        font-size: 2rem;
+    .topbtn {
+        button {
+            font-size: 2rem;
+        }
     }
-}
 
-.search{ 
-input, select {
-font-size: .6rem;
-}
+    .search {
 
-button{
-    font-size: 1.6rem;
-}
+        input,
+        select {
+            font-size: .6rem;
+        }
 
-}
+        button {
+            font-size: 1.6rem;
+        }
+    }
 
-.popup {
-    padding: 6rem 2rem 2rem;
-    .body{
-        width: 100%;
-        padding: 1rem;
+    .popup {
+        padding: 6rem 2rem 2rem;
 
-        img{
+        .body {
             width: 100%;
-            border-radius: 5%;
+            padding: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        .nut {
+            gap: 0;
         }
     }
-    p{
-        font-size: 1.4rem;
-    }
+}
 
-    .nut{
-        gap: 0;
+@media screen and (max-width : 714px) {
+    .popup {
+        .body {
+            @include dflex(column, flex-start, flex-start);
+
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }
-}     

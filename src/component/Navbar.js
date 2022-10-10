@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {  AiFillCloseCircle, AiOutlineSearch } from 'react-icons/ai';
 import { GiFruitBowl } from 'react-icons/gi';
-import { fetchdata} from '../redux/Container/Containers';
+import  { fetchdata} from '../redux/Container/Containers';
+import Container from './Container';
 
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
     const cat = document.querySelector('#category').value;
     if (event.key === 'Enter') {
       dispatch(fetchdata(`${cat}/${title}`));
-      document.querySelector('.sp').innerHTML = 'Searched Fruits';
+      <Container/>
     }
   };
 

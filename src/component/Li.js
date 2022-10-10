@@ -2,16 +2,14 @@
 import React from 'react';
 
 const Li = ({ nutritions }) => (
-  <div className="li">
-    <ul>
-      <li>
+  <>
+       <li>
         <p> calories: </p>
         <p>
           {' '}
           {nutritions.calories}
         </p>
       </li>
-    </ul>
     <li>
       <p> carbohydrates: </p>
       <p>
@@ -44,7 +42,7 @@ const Li = ({ nutritions }) => (
         {' '}
       </p>
     </li>
-  </div>
+  </>
 );
 
 export default Li;
