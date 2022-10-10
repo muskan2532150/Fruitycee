@@ -15,7 +15,10 @@ const Item = ({ record }) => {
         <button onClick={() => handleClick(record)} type="button">
           <Link to="/details"><div className='cards'>
             <img src={image} alt={record.name} />
-            <div>{record.name}</div>
+            <div> <p>
+              {record.name}
+            </p>
+              </div>
       </div>
       </Link>
         </button>

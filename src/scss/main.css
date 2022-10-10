@@ -18,7 +18,7 @@ nav {
   align-items: center;
   width: 100%;
 }
-nav svg {
+nav a svg {
   font-size: 4rem;
   color: black;
 }
@@ -69,34 +69,34 @@ nav svg {
   margin: auto;
   outline: 0;
   height: 100%;
-  position: relative;
   background: transparent;
 }
 
 .cards {
   height: 100%;
+  position: relative;
 }
 .cards div {
-  border: 0;
-  padding-bottom: 5rem;
-  width: 80%;
-  margin: auto;
-  outline: 0;
+  width: 100%;
+  border-radius: 12px;
+  bottom: 0;
+  color: white;
+  position: absolute;
+  background: rgb(51, 65, 85);
+  background: rgba(51, 65, 85, 0.7);
   height: 100%;
-  position: relative;
-  background: transparent;
 }
 .cards div:hover {
   opacity: 1;
 }
 .cards img {
-  max-width: 80%;
+  max-width: 100%;
   height: 100%;
   border-radius: 12px;
 }
 
 .sbtn, .search button {
-  color: rgb(51, 65, 85);
+  color: black;
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
   border: 0;
@@ -177,12 +177,18 @@ nav svg {
 }
 
 @media screen and (max-width: 540px) {
+  nav a svg {
+    font-size: 3rem;
+  }
   .container {
     margin: 2rem;
     row-gap: 3.6rem;
     -moz-column-gap: 0.7rem;
          column-gap: 0.7rem;
     grid-template-columns: 1fr 1fr;
+  }
+  .container button {
+    padding: 0;
   }
   .cards img {
     max-width: 100%;
@@ -192,6 +198,12 @@ nav svg {
   }
   .topbtn button {
     font-size: 2rem;
+  }
+  .search input, .search select {
+    font-size: 0.6rem;
+  }
+  .search button {
+    font-size: 1.6rem;
   }
   .popup {
     padding: 6rem 2rem 2rem;

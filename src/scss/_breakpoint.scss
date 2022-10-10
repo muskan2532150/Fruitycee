@@ -1,9 +1,21 @@
 @media screen and (max-width :  540px) {
-.container{
+nav{
+    a{
+        svg{
+            font-size: 3rem;
+        }
+    }
+}
+
+    .container{
     margin: 2rem;
     row-gap: 3.6rem;
     column-gap: .7rem;
     grid-template-columns: 1fr 1fr;
+
+    button{
+        padding: 0;
+    }
 }
 
 .cards{
@@ -22,6 +34,16 @@
     }
 }
 
+.search{ 
+input, select {
+font-size: .6rem;
+}
+
+button{
+    font-size: 1.6rem;
+}
+
+}
 
 .popup {
     padding: 6rem 2rem 2rem;

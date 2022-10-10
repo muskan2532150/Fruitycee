@@ -11,23 +11,23 @@
     margin: auto;
     outline: 0;
     height: 100%;
-    position: relative;
     background: transparent;
   }
 }
 
 .cards {
   height:100%;
+  position: relative;
 
   div {
-    border: 0;
-    padding-bottom: 5rem;
-    width: 80%;
-    margin: auto;
-    outline: 0;
+    width: 100%;
+    border-radius: 12px;
+    bottom: 0;
+    color: white;
+    position: absolute;
+    background: rgb(51, 65, 85);
+    background: rgb(51, 65, 85, 0.7);
     height: 100%;
-    position: relative;
-    background: transparent;
 
     &:hover{
       opacity: 1;
@@ -35,7 +35,7 @@
   }
 
   img {
-    max-width: 80%;
+    max-width: 100%;
     height: 100%;
     border-radius: 12px;
   }
@@ -43,7 +43,7 @@
 }
 
 .sbtn {
-  color:$blue;
+  color:$black;
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
   border: 0;

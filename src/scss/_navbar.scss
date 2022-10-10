@@ -5,10 +5,13 @@ nav {
   @include dflex(row,space-between,center);
   width: 100%;
 
-  svg {
-    font-size: 4rem;
-    color: $black;
+  a{
+    svg {
+      font-size: 4rem;
+      color: $black;
+    }
   }
+  
 }
 
 .search {
