@@ -1,5 +1,6 @@
-.spinner{
-    height: 80vh;
-    margin: auto;
-    @include dflex(row,center,center);
+.spinner {
+  height: 80vh;
+  margin: auto;
+
+  @include dflex(row,center,center);
 }

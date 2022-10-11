@@ -17,57 +17,58 @@ const Popup = () => {
       <div className="body">
         <img src={image} alt={data.name} />
         {' '}
-        <div className="lists"><li>
-          <p> Name : </p>
-          <p>
-            {' '}
-            {data.name}
-          </p>
-        </li>
-        <li>
-          <p>Id:</p>
-          <p>
-            {' '}
-            {data.id}
-            {' '}
-          </p>
-        </li>
-        <li>
-          <p>  Family : </p>
-          <p>
-            {' '}
-            {data.family}
-            {' '}
-          </p>
-        </li>
-        <li>
-          <p>  Order : </p>
-          <p>
-            {' '}
-            {data.order}
-            {' '}
-          </p>
-        </li>
-        <li>
-          <p> Genus:  </p>
-          <p>
-            {' '}
-            {data.genus}
-            {' '}
-          </p>
-        </li>
-        <div className="nut">
-          <ul>
+        <div className="lists">
           <li>
-            {' '}
+            <p> Name : </p>
             <p>
-              Nutritions :
+              {' '}
+              {data.name}
+            </p>
+          </li>
+          <li>
+            <p>Id:</p>
+            <p>
+              {' '}
+              {data.id}
               {' '}
             </p>
           </li>
-          <Li nutritions={data.nutritions} />
-          </ul>
-        </div>
+          <li>
+            <p>  Family : </p>
+            <p>
+              {' '}
+              {data.family}
+              {' '}
+            </p>
+          </li>
+          <li>
+            <p>  Order : </p>
+            <p>
+              {' '}
+              {data.order}
+              {' '}
+            </p>
+          </li>
+          <li>
+            <p> Genus:  </p>
+            <p>
+              {' '}
+              {data.genus}
+              {' '}
+            </p>
+          </li>
+          <div className="nut">
+            <ul>
+              <li>
+                {' '}
+                <p>
+                  Nutritions :
+                  {' '}
+                </p>
+              </li>
+              <Li nutritions={data.nutritions} />
+            </ul>
+          </div>
         </div>
       </div>
     </div>

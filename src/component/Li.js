@@ -3,13 +3,13 @@ import React from 'react';
 
 const Li = ({ nutritions }) => (
   <>
-       <li>
-        <p> calories: </p>
-        <p>
-          {' '}
-          {nutritions.calories}
-        </p>
-      </li>
+    <li>
+      <p> calories: </p>
+      <p>
+        {' '}
+        {nutritions.calories}
+      </p>
+    </li>
     <li>
       <p> carbohydrates: </p>
       <p>

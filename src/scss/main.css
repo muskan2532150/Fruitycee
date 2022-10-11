@@ -18,6 +18,7 @@ nav {
   align-items: center;
   width: 100%;
 }
+
 nav a svg {
   font-size: 4rem;
   color: black;
@@ -28,18 +29,22 @@ nav a svg {
   margin-top: -5rem;
   padding-right: 3rem;
 }
+
 .search > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
+
 .search select {
   margin-right: 0.5rem;
 }
+
 .search select option {
   font-size: medium;
 }
+
 .search input,
 .search select {
   border-color: rgb(51, 65, 85);
@@ -48,16 +53,22 @@ nav a svg {
   padding: 0.5rem;
   color: rgb(51, 65, 85);
 }
-.search input::-moz-placeholder, .search select::-moz-placeholder {
+
+.search input::-moz-placeholder,
+.search select::-moz-placeholder {
   color: rgb(51, 65, 85);
 }
-.search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
+
+.search input:-ms-input-placeholder,
+.search select:-ms-input-placeholder {
   color: rgb(51, 65, 85);
 }
+
 .search input::placeholder,
 .search select::placeholder {
   color: rgb(51, 65, 85);
 }
+
 .spinner {
   height: 80vh;
   margin: auto;
@@ -73,6 +84,7 @@ nav a svg {
   margin: 4rem;
   padding: 2rem;
 }
+
 .container button {
   border: 0;
   padding-bottom: 5rem;
@@ -87,6 +99,7 @@ nav a svg {
   height: 100%;
   position: relative;
 }
+
 .cards div {
   width: 100%;
   border-radius: 12px;
@@ -102,19 +115,23 @@ nav a svg {
   align-items: center;
   opacity: 0;
 }
+
 .cards div:hover {
   opacity: 1;
 }
-.cards div p {
+
+.cards p {
   font-size: 3vw;
 }
+
 .cards img {
   max-width: 100%;
   height: 100%;
   border-radius: 12px;
 }
 
-.sbtn, .search button {
+.sbtn,
+.search button {
   color: black;
   font-size: 2.6rem;
   padding: 0.5rem 0.5rem 0;
@@ -131,10 +148,12 @@ nav a svg {
 .popup {
   padding: 2rem;
 }
+
 .popup p {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 .popup button {
   font-size: 2rem;
   box-shadow: none;
@@ -142,6 +161,7 @@ nav a svg {
   outline: 0;
   background: transparent;
 }
+
 .popup .body {
   margin: auto;
   width: 100%;
@@ -150,10 +170,12 @@ nav a svg {
   grid-template-columns: 1fr 1fr;
   gap: 2%;
 }
+
 .popup .body img {
   max-width: 50%;
   border-radius: 5%;
 }
+
 .popup .body li {
   list-style: none;
   display: flex;
@@ -161,9 +183,11 @@ nav a svg {
   justify-content: space-between;
   align-items: center;
 }
+
 .popup .body p {
   padding: 0.5rem 0.5rem 0;
 }
+
 .popup .nut {
   gap: 1.5rem;
   display: flex;
@@ -171,9 +195,11 @@ nav a svg {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .popup .nut ul {
   width: 100%;
 }
+
 .popup .li {
   display: flex;
   flex-direction: column;
@@ -198,6 +224,7 @@ nav a svg {
   bottom: 0;
   right: 3vh;
 }
+
 .topbtn button {
   border: 0;
   background: transparent;
@@ -208,49 +235,62 @@ nav a svg {
   nav a svg {
     font-size: 3rem;
   }
+
   .container {
     margin: 2rem;
     row-gap: 3.6rem;
     -moz-column-gap: 0.7rem;
-         column-gap: 0.7rem;
+    column-gap: 0.7rem;
     grid-template-columns: 1fr 1fr;
   }
+
   .container button {
     padding: 0;
   }
+
   .cards img {
     max-width: 100%;
   }
+
   .cards > div {
     max-width: 70%;
   }
+
   .topbtn button {
     font-size: 2rem;
   }
+
   .search input,
-.search select {
+  .search select {
     font-size: 0.6rem;
   }
+
   .search button {
     font-size: 1.6rem;
   }
+
   .popup {
     padding: 6rem 2rem 2rem;
   }
+
   .popup .body {
     width: 100%;
     padding: 1rem;
   }
+
   .popup .body img {
     width: 100%;
   }
+
   .popup p {
     font-size: 1.4rem;
   }
+
   .popup .nut {
     gap: 0;
   }
 }
+
 @media screen and (max-width: 714px) {
   .popup .body {
     display: flex;
@@ -258,7 +298,8 @@ nav a svg {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .popup .body img {
     max-width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}

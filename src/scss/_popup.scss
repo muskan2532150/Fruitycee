@@ -29,6 +29,7 @@
 
     li {
       list-style: none;
+
       @include dflex(row, space-between, center);
     }
 
@@ -39,6 +40,7 @@
 
   .nut {
     gap: 1.5rem;
+
     @include dflex(column, flex-start, flex-start);
 
     ul {
@@ -48,10 +50,9 @@
 
   .li {
     @include dflex(column, flex-start, flex-start);
-
   }
 }
 
-.lists{
+.lists {
   width: 70%;
 }

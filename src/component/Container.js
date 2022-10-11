@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { AiOutlineArrowUp} from 'react-icons/ai';
+import { AiOutlineArrowUp, AiFillCloseCircle, AiOutlineSearch } from 'react-icons/ai';
 import { fetchdata, STATUSES } from '../redux/Container/Containers';
 import Item from './Item';
 import Spinners from './Spinner';
-import {  AiFillCloseCircle, AiOutlineSearch } from 'react-icons/ai';
 // import  { fetchdata} from '../redux/Container/Containers';
 // import Container from './Container';
 
 const Container = () => {
-  const { data,status } = useSelector((state) => state.container);
+  const { data, status } = useSelector((state) => state.container);
   const [scroll, setscroll] = useState(document.documentElement.scrollTop);
   const [bool, setbool] = useState(false);
   const dispatch = useDispatch();
@@ -26,35 +25,32 @@ const Container = () => {
     setscroll(0);
   };
 
-  
-if(status=== STATUSES.LOADING)
-{
-  return <Spinners/>
-}
-
-if(status=== STATUSES.ERROR)
-{
-  return <h2 className='spinner'>ERROR...</h2>
-}
-
-const handleClosebbtn = () => { 
-  document.querySelector('.inputText').value ? dispatch(fetchdata('all')) : 'false';
-  document.querySelector('.inputText').value = ''; 
-  setbool(!bool);
- }
-
- const handleSearch = (event) => {
-  const title = document.querySelector('.inputText').value;
-  const cat = document.querySelector('#category').value;
-  if (event.key === 'Enter') {
-    dispatch(fetchdata(`${cat}/${title}`));
-    <Container/>
+  if (status === STATUSES.LOADING) {
+    return <Spinners />;
   }
-};
+
+  if (status === STATUSES.ERROR) {
+    return <h2 className="spinner">ERROR...</h2>;
+  }
+
+  const handleClosebbtn = () => {
+    setbool(!bool);
+    document.querySelector('.inputText').value ? dispatch(fetchdata('all')) : 'false';
+    document.querySelector('.inputText').value = '';
+  };
+
+  const handleSearch = (event) => {
+    const title = document.querySelector('.inputText').value;
+    const cat = document.querySelector('#category').value;
+    if (event.key === 'Enter') {
+      dispatch(fetchdata(`${cat}/${title}`));
+        <Container />;
+    }
+  };
 
   return (
     <>
-    <div className="search">
+      <div className="search">
         { bool ? (
           <>
             <div>
@@ -77,15 +73,13 @@ const handleClosebbtn = () => {
           : <button type="button" className="sbtn" onClick={() => setbool(!bool)}><AiOutlineSearch /></button>}
       </div>
       <div className="container">
-      {data.map((record) => {
-        return <Item record={record} key={record.id} />;
-      })}
-      <div className="topbtn">
-        <button className={scroll > 20 ? 'scrollbtn ' : 'scrollDown'} type="button" onClick={() => handleScroll()}><AiOutlineArrowUp /></button>
+        {data.map((record) => <Item record={record} key={record.id} />)}
+        <div className="topbtn">
+          <button className={scroll > 20 ? 'scrollbtn ' : 'scrollDown'} type="button" onClick={() => handleScroll()}><AiOutlineArrowUp /></button>
+        </div>
       </div>
-    </div>
     </>
-    
+
   );
 };
 

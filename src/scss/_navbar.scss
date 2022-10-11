@@ -2,16 +2,17 @@ nav {
   background-color: $blue;
   height: 10vh;
   padding: 1.5rem;
+
   @include dflex(row,space-between,center);
+
   width: 100%;
 
-  a{
+  a {
     svg {
       font-size: 4rem;
       color: $black;
     }
   }
-  
 }
 
 .search {
@@ -37,10 +38,10 @@ nav {
     font-size: 1.6rem;
     border-radius: 6px;
     padding: 0.5rem;
-    color:$blue;
+    color: $blue;
 
     &::placeholder {
-     color: $blue;
+      color: $blue;
     }
   }
 

@@ -1,81 +1,80 @@
-@media screen and (max-width : 540px) {
-    nav {
-        a {
-            svg {
-                font-size: 3rem;
-            }
-        }
+@media screen and (max-width: 540px) {
+  nav {
+    a {
+      svg {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .container {
+    margin: 2rem;
+    row-gap: 3.6rem;
+    column-gap: 0.7rem;
+    grid-template-columns: 1fr 1fr;
+
+    button {
+      padding: 0;
+    }
+  }
+
+  .cards {
+    img {
+      max-width: 100%;
     }
 
-    .container {
-        margin: 2rem;
-        row-gap: 3.6rem;
-        column-gap: .7rem;
-        grid-template-columns: 1fr 1fr;
+    >div {
+      max-width: 70%;
+    }
+  }
 
-        button {
-            padding: 0;
-        }
+  .topbtn {
+    button {
+      font-size: 2rem;
+    }
+  }
+
+  .search {
+    input,
+    select {
+      font-size: 0.6rem;
     }
 
-    .cards {
-        img {
-            max-width: 100%;
-        }
+    button {
+      font-size: 1.6rem;
+    }
+  }
 
-        >div {
-            max-width: 70%;
-        }
+  .popup {
+    padding: 6rem 2rem 2rem;
+
+    .body {
+      width: 100%;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+      }
     }
 
-    .topbtn {
-        button {
-            font-size: 2rem;
-        }
+    p {
+      font-size: 1.4rem;
     }
 
-    .search {
-
-        input,
-        select {
-            font-size: .6rem;
-        }
-
-        button {
-            font-size: 1.6rem;
-        }
+    .nut {
+      gap: 0;
     }
-
-    .popup {
-        padding: 6rem 2rem 2rem;
-
-        .body {
-            width: 100%;
-            padding: 1rem;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        p {
-            font-size: 1.4rem;
-        }
-
-        .nut {
-            gap: 0;
-        }
-    }
+  }
 }
 
-@media screen and (max-width : 714px) {
-    .popup {
-        .body {
-            @include dflex(column, flex-start, flex-start);
+@media screen and (max-width: 714px) {
+  .popup {
+    .body {
+      @include dflex(column, flex-start, flex-start);
 
-            img {
-                max-width: 100%;
-            }
-        }
+      img {
+        max-width: 100%;
+      }
     }
+  }
 }
