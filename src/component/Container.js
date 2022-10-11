@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AiOutlineArrowUp} from 'react-icons/ai';
 import { fetchdata, STATUSES } from '../redux/Container/Containers';
 import Item from './Item';
+import Spinners from './Spinner';
 
 const Container = () => {
   const { data,status } = useSelector((state) => state.container);
@@ -24,7 +25,12 @@ const Container = () => {
   
 if(status=== STATUSES.LOADING)
 {
-  return <h2>Loading...</h2>
+  return <Spinners/>
+}
+
+if(status=== STATUSES.ERROR)
+{
+  return <h2 className='spinner'>ERROR...</h2>
 }
 
   return (

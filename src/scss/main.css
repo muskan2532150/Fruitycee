@@ -56,6 +56,15 @@ nav a svg {
 .search select::placeholder {
   color: rgb(51, 65, 85);
 }
+.spinner {
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
