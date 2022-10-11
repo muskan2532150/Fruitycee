@@ -25,6 +25,8 @@ nav a svg {
 
 .search {
   text-align: end;
+  margin-top: -5rem;
+  padding-right: 3rem;
 }
 .search > div {
   display: flex;
