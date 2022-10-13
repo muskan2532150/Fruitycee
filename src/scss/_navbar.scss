@@ -19,6 +19,7 @@ nav {
   text-align: end;
   margin-top: -5rem;
   padding-right: 3rem;
+  padding-top: 1rem;
 
   >div {
     @include dflex(row,flex-end,center);

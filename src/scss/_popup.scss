@@ -17,13 +17,13 @@
   .body {
     margin: auto;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2%;
 
     img {
-      max-width: 50%;
+      max-width: 100%;
       border-radius: 5%;
     }
 

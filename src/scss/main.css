@@ -28,6 +28,7 @@ nav a svg {
   text-align: end;
   margin-top: -5rem;
   padding-right: 3rem;
+  padding-top: 1rem;
 }
 
 .search > div {
@@ -165,14 +166,14 @@ nav a svg {
 .popup .body {
   margin: auto;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
 }
 
 .popup .body img {
-  max-width: 50%;
+  max-width: 100%;
   border-radius: 5%;
 }
 
@@ -223,6 +224,7 @@ nav a svg {
   position: fixed;
   bottom: 0;
   right: 3vh;
+  height: 10vh;
 }
 
 .topbtn button {

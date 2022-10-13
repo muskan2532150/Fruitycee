@@ -34,8 +34,10 @@ const Container = () => {
   }
 
   const handleClosebbtn = () => {
+    if (bool) {
+      dispatch(fetchdata('all'));
+    }
     setbool(!bool);
-    if (document.querySelector('.inputText').value) { dispatch(fetchdata('all')); }
     document.querySelector('.inputText').value = '';
   };
 
