@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 2. Clone the repo in your local machine:
 
 ```bash
-git@github.com:muskan2532150/Fruitycee.git
+https://github.com/muskan2532150/Fruitycee.git
 ```
 
 3. Open terminal and cd into project and install the dependencies
@@ -63,7 +63,7 @@ cd Fruitycee
 
 - GitHub: [Github](https://github.com/muskan2532150)
 - Twitter: [Twitter](muskan2532150)
-- Linkedin:[Linkedin](https://www.linkedin.com/in/muskan-gupta-869165225/)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/muskan-gupta-869165225/)
 
 
 ## 🤝 Contributing
